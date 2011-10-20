@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
     links = ActiveSupport::OrderedHash.new
     links["ESPN"]          = {:url => "http://www.espn.com", :description => "Scores and NFL blogs, my addiction."}
     links["CNN"]           = {:url => "http://www.cnn.com", :description => "Most of the time, I'm reading headlines."}
+    links["Green Bay Packers"] = {:url => "http://www.packers.com", :description => "Daily reading during the season."}
+    links["Hacker News"]   = {:url => "http://news.ycombinator.com", :description => "Lots of the same tech content, but good for headlines."}
     links
   end
   
