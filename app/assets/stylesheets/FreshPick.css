@@ -19,6 +19,16 @@ body {
 	text-align: center;
 }
 
+/* Misc Font Styles */
+span.important {
+	font-weight: bold;
+	color: #333;
+}
+
+span.faded {
+	color: #999;
+}
+
 /* Links */
 a:link, a:visited {
 	text-decoration: none;
@@ -198,9 +208,8 @@ input.button {
 #header h1#logo-text a {
 	position: absolute; 
 	margin: 0; padding: 0 5px 0 0;
-	font: bold 62px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;  
-	letter-spacing: -5px;
-	color: #1980AF;	
+	font: bold 62px Georgia, 'Times New Roman', Times, serif;
+	color: #999;	
 	text-decoration: none;
 		
 	/* change the values of top and left to adjust the position of the logo*/
@@ -210,13 +219,13 @@ input.button {
 #header p#slogan {
 	position: absolute;
 	margin: 0; padding:  0 5px 0 0;
-	font-family: Georgia, 'Times New Roman', Times, serif;;
-	font-weight: bold;
-	font-size: 13px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: normal;
+	font-size: 18px;
 	line-height: 1.8em;
-	font-style: italic;
 	letter-spacing: -.3px;
-	color: #999;	
+	color: #999;
+	width: 500px;	
 	
 	/* change the values of top and left to adjust the position */
 	top: 102px; left: 32px;		
@@ -224,10 +233,37 @@ input.button {
 
 #header #header-image {
 	position: absolute;
-	top: 12px; right: 30px;
+	top: 36px; right: 30px;
 	width: 292px;
 	height: 234px;	
-	background: url(../images/header-bg.png) no-repeat; 
+	;
+}
+
+div.links {
+	font-family: Georgia, 'Times New Roman', Times, serif;;
+	border: 1px solid #eee;
+	background: white;
+	position: absolute;
+	top: 36px; right: 0px;
+	font-size: 20px;
+	width: 300px;
+}
+
+div.links h3 {
+	padding: 12px;
+	font-size: 20px;
+	margin: 0px;
+	padding: 2px 12px;
+	background: #eee;
+	color: white;
+}
+
+div.links ul {
+	padding: 2px 12px;
+}
+
+div.links ul li {
+	margin-bottom: 12px;
 }
 
 /*  navigation  */
@@ -316,14 +352,13 @@ input.button {
 	display: inline;
 }
 #featured a.more-link {
-	background: #B4DB6F;
-	padding: 5px 10px 5px 10px;
+	background: #59a901;
+	padding: 8px 10px 8px 10px;
 	margin-top: 15px;
 	color: #FFF;
 	text-decoration: none;
-	border: 1px solid #BADE7D;
-	text-transform: uppercase;
-	font-size: 10px;
+	border: 1px solid #333;
+	font-size: 18px;
 	font-weight: bold;
 	line-height: 20px;	
 	display: block;
@@ -331,7 +366,6 @@ input.button {
 }
 #featured a.more-link:hover {
 	background: #008EFD;
-	border-color: #007DE2;
 }
 
 /* Content */
