@@ -244,7 +244,7 @@ div.links {
 	border: 1px solid #eee;
 	background: white;
 	position: absolute;
-	top: 36px; right: 0px;
+	top: 36px; right: 8px;
 	font-size: 20px;
 	width: 300px;
 }
@@ -417,9 +417,24 @@ div.links ul li {
 	color: #444;
 	border: none; 
 }
+#left h3 {
+	padding: 2px 12px;
+	margin: 0px;
+}
 #left .entry {
-	background: url(../images/dotted-lines.gif) repeat-x left bottom; 
 	padding-bottom: 15px;
+}
+#left .entry h3 {
+	background: #eee;
+	color: #999;
+	margin: 0px;
+	padding: 2px 12px;
+}
+#left .entry h4 {
+	margin-left: 12px;
+}
+#left .entry p {
+	margin-left: 12px;
 }
 #left .entry h3 a {
 	color: #444;
