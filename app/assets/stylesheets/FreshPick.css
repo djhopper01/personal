@@ -35,7 +35,7 @@ a:link, a:visited {
 	color: #0788C3;
 }
 a:hover {
-	border-bottom: 1px dotted #0788C3;
+/*	border-bottom: 1px dotted #0788C3;*/
 }
 a:link.more-link, a:visited.more-link {
 	padding-bottom: 2px;
@@ -460,6 +460,9 @@ div.links ul li {
 
 
 /* sidemenus */
+.sidemenu p {
+	margin-left: 12px;
+}
 .sidemenu ul {
 	text-align: left;
 	margin: 10px 8px 8px 8px; padding: 0;
@@ -479,6 +482,13 @@ div.links ul li {
 	color: #5D95CA;
 	padding-left: 0;	
 	font-weight: bold;	
+}
+.sidemenu ul li a.faded {
+	font-weight: normal;
+	color: #999;
+}
+.sidemenu ul li span.important {
+	font-weight: bold;
 }
 .sidemenu ul li a span {
 	color: #9F9F9F;	

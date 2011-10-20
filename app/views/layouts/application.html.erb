@@ -44,7 +44,7 @@
 					I've helped build a JavaScript library for a car (interfaced with a native Python extension and WebSockets). I've built Chrome extensions and Android applications. I love Ruby on Rails and any technology for the web.
 				</p>
 				<p>
-					<a href="mailto:hopper.derek@gmail.com" class="more-link">Email me today</a>
+					<a href="mailto:hopper.derek@gmail.com" class="sexybutton sexysimple sexylarge sexygreen">Email me today</a>
 				</p>
 			</div>
 		<!-- featured ends -->
@@ -56,104 +56,34 @@
 			<div id="content">
 
 				<div id="left">			
-
-					<div class="entry">
-
-						<h3><a href="index.html">Aliquam Risus Justo</a></h3>
-						<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-						posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-						odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra 
-						condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. 
-						In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-						posuere nunc justo tempus leo. 				
-						</p>
-
-						<p><a class="more-link" href="index.html">continue reading</a></p>
-
-					</div>
-
-					<div class="entry">
-
-						<h3>Lorem Ipsum Dolor Sit Amet</h3>
-						<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-						posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-						odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra 
-						condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. 
-						In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-						posuere nunc justo tempus leo. 				
-						</p>
-
-						<p><a class="more-link" href="index.html">continue reading</a></p>
-
-					</div>
-
-					<div class="entry">
-
-						<h3>Lorem Ipsum</h3>
-						<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-						posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-						odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra 
-						condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. 
-						In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-						posuere nunc justo tempus leo. 				
-						</p>
-
-						<p><a class="more-link" href="index.html">continue reading</a></p>
-
-					</div>
-
+					<%= yield %>
 				</div>
 
 				<div id="right">
 
 					<div class="sidemenu">	
 						<h3>My Products</h3>
-						<ul>				
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html#TemplateInfo">TemplateInfo</a></li>
-							<li><a href="style.html">Style Demo</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="archives.html">Archives</a></li>
+						<p>In addition to building for clients, I spend a lot of my time on this software.</p>
+						<ul>
+							<%= display_links(my_products)%>
 						</ul>	
 					</div>
 
 					<div class="sidemenu">
 						<h3>My Code</h3>
+						<p>These are quick hacks I build to scratch the development itch.</p>
 						<ul>
-							<li><a href="http://themeforest.net?ref=ealigam" title="Site Templates">ThemeForest <br />
-	                            <span>Site Templates, Web &amp; CMS Themes.</span></a>
-	                        </li>
-							<li><a href="http://www.4templates.com/?go=228858961" title="Website Templates">4Templates <br />
-	                            <span>Low Cost High-Quality Templates</span></a>
-	                        </li>
-							<li><a href="http://store.templatemonster.com?aff=ealigam" title="Web Templates">TemplateMonster <br />
-	                            <span>Delivering the Best Templates on the Net!</span></a>
-	                        </li>
-							<li><a href="http://graphicriver.net?ref=ealigam" title="Stock Graphics">GraphicRiver <br />
-	                            <span>Awesome Stock Graphics</span></a>
-	                        </li>
-						 	<li><a href="http://www.dreamhost.com/r.cgi?287326|SSHOUT" title="Web Hosting">DreamHost <br />
-	                            <span>Premium Webhosting. Use the promocode <strong>sshout</strong> and save <strong>50 USD</strong>. </span></a>
-	                        </li>
+							<%= display_links(my_code)%>
 						</ul>
 					</div>
 
 					<div class="sidemenu">
 						<h3>My Life</h3>
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+						<p class="thumbs">
+							<img src="images/thumb.jpg" width="40" height="40" />
+							<img src="images/thumb.jpg" width="40" height="40" />
+							<img src="images/thumb.jpg" width="40" height="40" />
+						</p>
 					</div>
 
 				</div>		
@@ -166,29 +96,8 @@
 		<!-- footer starts here -->	
 		<div id="footer-outer" class="clear"><div id="footer-wrap">
 
-			<div class="col-a">
-
-				<h3>Image Gallery </h3>					
-
-				<p class="thumbs">
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>	
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
-					<a href="index.html"><img src="images/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>				
-				</p>	
-
-				<h3>Lorem ipsum dolor</h3>
-
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-				odio, ac blandit ante orci ut diam. Cras fringilla magna.  
-			   </p>			
-
+			<div class="col-a">	
+				&nbsp;
 			</div>
 
 			<div class="col-a">
