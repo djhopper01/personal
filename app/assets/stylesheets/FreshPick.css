@@ -393,7 +393,7 @@ div.links ul li {
 #left {
 	width: 580px;	
 	float: left;	
-	padding-top: 15px;	
+	padding-top: 28px;	
 }
 #right {
 	width: 285px;
@@ -522,7 +522,7 @@ div.links ul li {
 	float: left;
 	width: 920px;		
 	background: url(../images/dotted-lines.gif) repeat-x;	
-	font-size: .9em;		
+	font-size: 1em;		
 	color: #777;	
 }
 #footer-wrap {
@@ -581,7 +581,7 @@ div.links ul li {
 	width: 920px;
 	margin: 30px auto 0 auto;	
 	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;
-	font-size: .9em;		
+	font-size: 1em;		
 	color: #777;
 	border-bottom: 50px solid #FFF; 
 }
