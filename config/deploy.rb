@@ -5,6 +5,7 @@ set :rvm_ruby_string, '1.9.2-p290'
 set :rvm_type, :user
 
 require 'bundler/capistrano'
+load 'deploy/assets'
 
 # main details
 set :application, "personal"
